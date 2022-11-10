@@ -34,34 +34,63 @@ gsap.to(".typing2", {
     // markers: true,
   },
 });
-gsap.to(".yel-mon", {
-  y: "+=25",
-  ease: Sine.easeOut,
-  scrollTrigger: {
-    trigger: ".yel-mon",
-    start: "top center",
-    scrub: 0.5,
+gsap.fromTo(
+  ".yel-mon",
+  {
+    y:0,
   },
-});
-gsap.to(".blue-mon", {
-  y: "+=55",
-  ease: Sine.easeOut,
-  scrollTrigger: {
-    trigger: ".blue-mon",
-    start: "top center",
-    scrub: 0.5,
+  {
+    y:-25,
+    duration: 2,
+    repeat:-1,
+    yoyo: true,
+    ease: Sine.easeOut,
+  }
+);
+gsap.fromTo(
+  ".green-mon",
+  {
+    y:0,
   },
-});
-gsap.to(".green-mon", {
-  y: "-=35",
-  ease: Sine.easeOut,
-  scrollTrigger: {
-    trigger: ".blue-mon",
-    start: "top center",
-    scrub: 0.5,
+  {
+    y:30,
+    duration: 1.8,
+    delay:0.5,
+    repeat:-1,
+    yoyo: true,
+    ease: Sine.easeOut,
+  }
+);
+gsap.fromTo(
+  ".blue-mon",
+  {
+    y:0,
+    rotate:-10,
   },
-});
-
+  {
+    y:25,
+    rotate:10,
+    duration: 2.2,
+    delay:0.2,
+    repeat:-1,
+    yoyo: true,
+    ease: Sine.easeOut,
+  }
+);
+gsap.fromTo(
+  ".red-mon,.eyes",
+  {
+    y:0,
+  },
+  {
+    y:40,
+    duration: 2.4,
+    delay:0.5,
+    repeat:-1,
+    yoyo: true,
+    ease: Sine.easeOut,
+  }
+);
 ////section-2
 
 gsap.utils.toArray(".popup").forEach((element) => {
