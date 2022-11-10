@@ -288,6 +288,7 @@ span.special-character {
     background-position-x: right;
     background-position-y: bottom;
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .js-draggable {
     font-size: 38px;
