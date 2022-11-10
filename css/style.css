@@ -199,6 +199,10 @@
   text-align: center;
   color: var(--primary-white);
 }
+.copyright.p_cn
+{
+  font-family:  "Noto Sans TC", sans-serif;
+}
 
 .last .section-inner {
   display: grid;
@@ -327,6 +331,9 @@
   .eyes {
     top: 54%;
     left: 33%;
+  }
+  .awards {
+    padding: 50px 60px;
   }
 }
 @media screen and (max-width: 800px) {

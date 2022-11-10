@@ -201,6 +201,9 @@ span.special-character {
   max-width: 100%;
   display: inline-block;
   white-space: nowrap;
+  overflow-x: hidden;
+  
+
 }
 
 .calender-section {
