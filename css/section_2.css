@@ -69,6 +69,22 @@
   margin-bottom: 20px;
 }
 
+.section2-mon.blue-mon {
+  position: absolute;
+  top: 77%;
+  right: 33px;
+  z-index: 0;
+}
+.section2-mon.blue-mon > img {
+  transform: rotate(20deg);
+}
+.section2-mon.yel-mon {
+  position: absolute;
+  top: 64%;
+  right: 60px;
+  z-index: 1;
+}
+
 /* Right div */
 .right-scroll {
   height: fit-content;
@@ -117,7 +133,7 @@
 
 .special-character,
 span.special-character {
-  font-family: "Noto Sans TC", sans-serif !important;
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
 }
 
 .right-scroll .right-first .black-block h3 {
@@ -153,6 +169,7 @@ span.special-character {
   background-position-x: right;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .topic h1 {
@@ -184,7 +201,6 @@ span.special-character {
   max-width: 100%;
   display: inline-block;
   white-space: nowrap;
-  transform: translateX(-200%);
 }
 
 .calender-section {
@@ -265,6 +281,20 @@ span.special-character {
   .left-sticky .left-first > div {
     width: fit-content;
     margin: 60px auto 80px auto;
+  }
+  .section2-mon.blue-mon {
+    top: 550px;
+  }
+
+  .section2-mon.yel-mon > img {
+    transform: scale(0.8);
+  }
+  .section2-mon.blue-mon > img {
+    transform: rotate(20deg) scale(0.8);
+  }
+  .section2-mon.yel-mon {
+    top: 450px;
+    right: 35px;
   }
 
   .right-scroll {
