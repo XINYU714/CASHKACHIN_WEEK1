@@ -117,6 +117,12 @@ const timeLineRunning = gsap.timeline({
   },
 });
 
-timeLineRunning.to(".running", {
-  xPercent: "50",
-});
+timeLineRunning.fromTo(
+  ".running",
+  {
+    xPercent: "-20",
+  },
+  {
+    xPercent: "0",
+  }
+);
