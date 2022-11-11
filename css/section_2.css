@@ -15,6 +15,7 @@
   background: url(../src/green-dot-short.jpg);
   background-position-x: right;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* grid */
@@ -98,7 +99,7 @@
   width: 100%;
 }
 .right-scroll .inner-non-fill {
-  width: 720px;
+  max-width: 720px;
 }
 .right-scroll .right-first > div {
   margin: 170px auto 170px auto;
@@ -195,14 +196,15 @@ span.special-character {
   color: #fafafa;
   width: fit-content;
 }
-
+.move-text{
+  overflow: hidden;
+}
 .running {
   color: #fafafa;
   max-width: 100%;
   display: inline-block;
   white-space: nowrap;
-  overflow-x: hidden;
-  
+  overflow: visible;
 
 }
 
@@ -210,6 +212,7 @@ span.special-character {
   padding: 150px 0 250px 0;
   width: fit-content;
   margin: auto;
+  max-width: 100%;
 }
 
 .section4-text {
@@ -246,6 +249,7 @@ span.special-character {
 
 .calender .calender-stars {
   position: absolute;
+  overflow: hidden;
 }
 .calender .calender-stars:first-child {
   top: -60px;
@@ -343,6 +347,7 @@ span.special-character {
     margin-bottom: 65px;
   }
   .calender .calender-pic {
+    max-width: 100%;
     width: unset;
     z-index: 2;
   }
@@ -353,6 +358,6 @@ span.special-character {
   }
   .calender .calender-stars {
     bottom: 0px;
-    right: -30px;
+    right: 0px;
   }
 }

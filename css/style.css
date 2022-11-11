@@ -188,7 +188,7 @@
 }
 .typing1,
 .typing2 {
-  max-width: 1060px;
+  max-width: 1080px;
   padding: 10px 40px;
   margin: 0 auto;
   color: var(--light-white);
@@ -199,6 +199,7 @@
   text-align: center;
   color: var(--primary-white);
 }
+
 .copyright.p_cn
 {
   font-family:  "Noto Sans TC", sans-serif;
