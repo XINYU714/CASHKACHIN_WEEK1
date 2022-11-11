@@ -1,4 +1,4 @@
-//section-1
+
 document.querySelector("body").addEventListener("mousemove", eyeball);
 function eyeball() {
   var eye = document.querySelectorAll(".eye");
@@ -9,7 +9,6 @@ function eyeball() {
     let rot = radian * (180 / Math.PI) * -1 + 270;
     eye.style.transform = "rotate(" + rot + "deg)";
   });
-  console.log("success");
 }
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -21,7 +20,6 @@ gsap.to(".typing1", {
   scrollTrigger: {
     trigger: ".contest",
     toggleActions: "play pause resume reset",
-    // markers: true,
   },
 });
 gsap.to(".typing2", {
@@ -31,7 +29,6 @@ gsap.to(".typing2", {
   scrollTrigger: {
     trigger: ".contest",
     toggleActions: "play pause resume reset",
-    // markers: true,
   },
 });
 gsap.fromTo(
@@ -91,7 +88,7 @@ gsap.fromTo(
     ease: Sine.easeOut,
   }
 );
-////section-2
+
 
 gsap.utils.toArray(".popup").forEach((element) => {
   hide(element);
