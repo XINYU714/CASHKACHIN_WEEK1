@@ -188,7 +188,7 @@
 }
 .typing1,
 .typing2 {
-  max-width: 1060px;
+  max-width: 1080px;
   padding: 10px 40px;
   margin: 0 auto;
   color: var(--light-white);
@@ -198,6 +198,11 @@
   padding: 40px 0;
   text-align: center;
   color: var(--primary-white);
+}
+
+.copyright.p_cn
+{
+  font-family:  "Noto Sans TC", sans-serif;
 }
 
 .last .section-inner {
@@ -327,6 +332,9 @@
   .eyes {
     top: 54%;
     left: 33%;
+  }
+  .awards {
+    padding: 50px 60px;
   }
 }
 @media screen and (max-width: 800px) {
