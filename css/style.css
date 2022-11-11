@@ -183,8 +183,8 @@
   transition: 0.5s;
 }
 .contest {
-  padding: 160px 0 140px;
-  min-height: 580px;
+  padding: 140px 0;
+  min-height: 500px;
 }
 .typing1,
 .typing2 {
@@ -210,6 +210,18 @@
   grid-template-columns: 7fr 3fr;
   border-right: 1px solid var(--primary-black);
   border-left: 1px solid var(--primary-black);
+  position: relative;
+}
+
+.last .section-inner::after{
+    content: '';
+    width: 570px;
+    height: 1px;
+    left: -570px;
+    top: 780px;
+    background-color: var(--primary-black);
+    position: absolute;
+    overflow: hidden;
 }
 
 .rule {
@@ -274,7 +286,7 @@
   border-bottom: 1px solid var(--primary-black);
 }
 .grid-07 {
-  border-left: 1px solid var(--primary-black);
+  /* border-left: 1px solid var(--primary-black); */
 }
 .grid-04,
 .grid-05,
@@ -295,8 +307,10 @@
 
 .sq-img {
   background-image: url("../src/chess.jpg");
+  background-position: top;
   position: relative;
   grid-row: 6/7;
+  border-top: 1px solid var(--primary-black)
 }
 .sq-img::before {
   content: "";
@@ -304,7 +318,9 @@
   left: -600px;
   height: 100%;
   background-image: url("../src/chess.jpg");
+  background-position: top;
   position: absolute;
+  border-top: 1px solid var(--primary-black);
 }
 @media screen and (max-width: 1440px) {
   .monster-wrap {
@@ -370,7 +386,7 @@
     background-color: var(--light-white);
   }
   .contest {
-    padding: 160px 0 140px;
+    padding: 140px 0 ;
     min-height: 300px;
   }
   .learn-more-wrap {
@@ -406,6 +422,8 @@
   }
   .last .section-inner {
     display: block;
+    position: relative;
+    overflow: hidden;
   }
   .rule {
     padding: 60px 25px;
