@@ -196,7 +196,7 @@ span.special-character {
   color: #fafafa;
   width: fit-content;
 }
-.move-text{
+.move-text {
   overflow: hidden;
 }
 .running {
@@ -205,7 +205,6 @@ span.special-character {
   display: inline-block;
   white-space: nowrap;
   overflow: visible;
-
 }
 
 .calender-section {
@@ -271,6 +270,19 @@ span.special-character {
     justify-content: center;
     z-index: 1;
   }
+  .black-block .rotate > img {
+    transform: scale(0.6);
+  }
+  .right-scroll .right-first .black-block h3 {
+    padding: 20px 20px;
+  }
+  .right-scroll .right-first .push-right {
+    margin-left: 0;
+  }
+  .right-scroll .right-first {
+    background-position: top;
+    padding: 40px 25px;
+  }
 
   .left-sticky {
     position: relative;
@@ -289,9 +301,6 @@ span.special-character {
     width: fit-content;
     margin: 60px auto 80px auto;
   }
-  .section2-mon.blue-mon {
-    top: 550px;
-  }
 
   .section2-mon.yel-mon > img {
     transform: scale(0.8);
@@ -300,7 +309,6 @@ span.special-character {
     transform: rotate(20deg) scale(0.8);
   }
   .section2-mon.yel-mon {
-    top: 450px;
     right: 35px;
   }
 
